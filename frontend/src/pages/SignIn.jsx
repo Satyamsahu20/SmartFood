@@ -48,7 +48,7 @@ function SignIn() {
      //   } catch (error) {
      //     console.log(error)
      //   }
-          }
+          // }
     return (
         <div className='min-h-screen w-full flex items-center justify-center p-4' style={{ backgroundColor: bgColor }}>
             <div className={`bg-white rounded-xl shadow-lg w-full max-w-md p-8 border-[1px] `} style={{

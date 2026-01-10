@@ -2,12 +2,12 @@ import React from 'react'
 import { useState } from 'react';
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
+// import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from 'react-router-dom';
 import axios from "axios"
 import { serverUrl } from '../App';
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import { auth } from '../../firebase';
+// import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+// import { auth } from '../../firebase';
 import { ClipLoader } from "react-spinners"
 import { useDispatch } from 'react-redux';
 import { setUserData } from '../redux/userSlice';
@@ -123,10 +123,10 @@ function SignUp() {
             {err && <p className='text-red-500 text-center my-[10px]'>*{err}</p>}
             
 
-            <button className='w-full mt-4 flex items-center justify-center gap-2 border rounded-lg px-4 py-2 transition cursor-pointer duration-200 border-gray-400 hover:bg-gray-100' onClick={handleGoogleAuth}>
+            {/* <button className='w-full mt-4 flex items-center justify-center gap-2 border rounded-lg px-4 py-2 transition cursor-pointer duration-200 border-gray-400 hover:bg-gray-100' onClick={handleGoogleAuth}>
 <FcGoogle size={20}/>
 <span>Sign up with Google</span>
-            </button>
+            </button> */}
             <p className='text-center mt-6 cursor-pointer' onClick={()=>navigate("/signin")}>Already have an account ?  <span className='text-[#ff4d2d]'>Sign In</span></p>
             </div>
         </div>

@@ -2,12 +2,12 @@ import React from 'react'
 import { useState } from 'react';
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
+// import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from 'react-router-dom';
 import axios from "axios"
 import { serverUrl } from '../App';
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import { auth } from '../../firebase';
+// import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+// import { auth } from '../../firebase';
 import { ClipLoader } from 'react-spinners';
 import { useDispatch } from 'react-redux';
 import { setUserData } from '../redux/userSlice';
@@ -37,17 +37,17 @@ function SignIn() {
            setLoading(false)
         }
      }
-     const handleGoogleAuth=async () => {
-             const provider=new GoogleAuthProvider()
-             const result=await signInWithPopup(auth,provider)
-       try {
-         const {data}=await axios.post(`${serverUrl}/api/auth/google-auth`,{
-             email:result.user.email,
-         },{withCredentials:true})
-         dispatch(setUserData(data))
-       } catch (error) {
-         console.log(error)
-       }
+     // const handleGoogleAuth=async () => {
+     //         const provider=new GoogleAuthProvider()
+     //         const result=await signInWithPopup(auth,provider)
+     //   try {
+     //     const {data}=await axios.post(`${serverUrl}/api/auth/google-auth`,{
+     //         email:result.user.email,
+     //     },{withCredentials:true})
+     //     dispatch(setUserData(data))
+     //   } catch (error) {
+     //     console.log(error)
+     //   }
           }
     return (
         <div className='min-h-screen w-full flex items-center justify-center p-4' style={{ backgroundColor: bgColor }}>
@@ -85,10 +85,10 @@ function SignIn() {
             </button>
       {err && <p className='text-red-500 text-center my-[10px]'>*{err}</p>}
 
-            <button className='w-full mt-4 flex items-center justify-center gap-2 border rounded-lg px-4 py-2 transition cursor-pointer duration-200 border-gray-400 hover:bg-gray-100' onClick={handleGoogleAuth}>
+            {/* <button className='w-full mt-4 flex items-center justify-center gap-2 border rounded-lg px-4 py-2 transition cursor-pointer duration-200 border-gray-400 hover:bg-gray-100' onClick={handleGoogleAuth}>
 <FcGoogle size={20}/>
 <span>Sign In with Google</span>
-            </button>
+            </button> */}
             <p className='text-center mt-6 cursor-pointer' onClick={()=>navigate("/signup")}>Want to create a new account ?  <span className='text-[#ff4d2d]'>Sign Up</span></p>
             </div>
         </div>

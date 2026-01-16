@@ -150,7 +150,7 @@ handleTodayDeliveries()
 <div className='bg-white rounded-2xl shadow-md p-5 w-[90%] mb-6 border border-orange-100'>
   <h1 className='text-lg font-bold mb-3 text-[#ff4d2d] '>Today Deliveries</h1>
 
-  <ResponsiveContainer width="100%" height={200}>
+  {/* <ResponsiveContainer width="100%" height={200}>
    <BarChart data={todayDeliveries}>
   <CartesianGrid strokeDasharray="3 3"/>
   <XAxis dataKey="hour" tickFormatter={(h)=>`${h}:00`}/>
@@ -158,7 +158,7 @@ handleTodayDeliveries()
     <Tooltip formatter={(value)=>[value,"orders"]} labelFormatter={label=>`${label}:00`}/>
       <Bar dataKey="count" fill='#ff4d2d'/>
    </BarChart>
-  </ResponsiveContainer>
+  </ResponsiveContainer> */}
 
   <div className='max-w-sm mx-auto mt-6 p-6 bg-white rounded-2xl shadow-lg text-center'>
 <h1 className='text-xl font-semibold text-gray-800 mb-2'>Today's Earning</h1>

@@ -147,8 +147,8 @@ handleTodayDeliveries()
 <p className='text-[#ff4d2d] '><span className='font-semibold'>Latitude:</span> {deliveryBoyLocation?.lat}, <span className='font-semibold'>Longitude:</span> {deliveryBoyLocation?.lon}</p>
     </div>
 
-<div className='bg-white rounded-2xl shadow-md p-5 w-[90%] mb-6 border border-orange-100'>
-  <h1 className='text-lg font-bold mb-3 text-[#ff4d2d] '>Today Deliveries</h1>
+{/* <div className='bg-white rounded-2xl shadow-md p-5 w-[90%] mb-6 border border-orange-100'> */}
+  {/* <h1 className='text-lg font-bold mb-3 text-[#ff4d2d] '>Today Deliveries</h1> */}
 
   {/* <ResponsiveContainer width="100%" height={200}>
    <BarChart data={todayDeliveries}>
@@ -160,11 +160,11 @@ handleTodayDeliveries()
    </BarChart>
   </ResponsiveContainer> */}
 
-  <div className='max-w-sm mx-auto mt-6 p-6 bg-white rounded-2xl shadow-lg text-center'>
-<h1 className='text-xl font-semibold text-gray-800 mb-2'>Today's Earning</h1>
-<span className='text-3xl font-bold text-green-600'>₹{totalEarning}</span>
-  </div>
-</div>
+  {/* <div className='max-w-sm mx-auto mt-6 p-6 bg-white rounded-2xl shadow-lg text-center'> */}
+{/* <h1 className='text-xl font-semibold text-gray-800 mb-2'>Today's Earning</h1> */}
+{/* <span className='text-3xl font-bold text-green-600'>₹{totalEarning}</span> */}
+  {/* </div>
+</div> */}
 
 
 {!currentOrder && <div className='bg-white rounded-2xl p-5 shadow-md w-[90%] border border-orange-100'>
